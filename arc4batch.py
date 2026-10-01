@@ -50,9 +50,9 @@ def main():
     parser.add_argument('command', choices=['check', 'demo', 'import-results', 'summarize', 'plot', 'noise', 'nmpc', 'suite', 'tuning'])
     args, remaining = parser.parse_known_args()
     if args.command == 'check':
-        sys.path.insert(0, str(ROOT / 'tools'))
-        sys.argv = ['verify_release.py', *remaining]
-        runpy.run_path(str(ROOT / 'tools/verify_release.py'), run_name='__main__')
+        sys.path.insert(0, str(ROOT / 'verification'))
+        sys.argv = ['check.py', *remaining]
+        runpy.run_path(str(ROOT / 'verification/check.py'), run_name='__main__')
     elif args.command == 'demo':
         run_script('solve_reduced_reference')
         run_script('reduced_arc')

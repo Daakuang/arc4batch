@@ -18,7 +18,7 @@ python arc4batch.py check
 python arc4batch.py demo
 ```
 
-`check` runs eight numerical tests, verifies the release source and evaluated model hashes, and checks the conditional economic-loop response bounds. `demo` solves the 100- and 400-interval reduced reference problems, independently integrates the optimized feed, and simulates the projected PI controller with its cooling-capacity selector. It requires no MATLAB installation. The figure is written to `outputs/reduced_benchmark_column.pdf` and the numerical record to `results/study/reduced/`.
+The small `verification/` directory holds the reproducibility checks, rather than development utilities. `check` runs eight numerical tests, verifies the release source and evaluated model hashes, and checks the conditional economic-loop response bounds. `demo` solves the 100- and 400-interval reduced reference problems, independently integrates the optimized feed, and simulates the projected PI controller with its cooling-capacity selector. It requires no MATLAB installation. The figure is written to `outputs/reduced_benchmark_column.pdf` and the numerical record to `results/study/reduced/`.
 
 ## Find the code you need
 
@@ -49,6 +49,16 @@ python arc4batch.py plot
 Import verifies the archive checksum and refuses to replace different existing results. Summary and figure files go to `outputs/`; the original result files remain in their recorded structure. The main comparison contains 60 prescribed runs. Additional ablation, tuning, and stress runs remain separate.
 
 MATLAB with CasADi is needed to rerun the industrial ARC simulations. Python and the saved CasADi model functions suffice for the NMPC comparison. The reproduction guide gives the commands and explains the archive layout.
+
+## Related papers and original model
+
+The industrial reactor model is shared with these earlier studies:
+
+- **Model and fault-monitoring benchmark:** Simin Li, Shuang-hua Yang, Yi Cao, Xiaoping Jiang and Chenchen Zhou, *A benchmark of industrial polymerization process for thermal runaway process monitoring*, Process Safety and Environmental Protection 193 (2025), 353–363. [DOI: 10.1016/j.psep.2024.11.057](https://doi.org/10.1016/j.psep.2024.11.057).
+- **Real-time NMPC:** Chenchen Zhou, Zuzhen Ji and Jose Matias, *Real-time nonlinear model predictive control framework for event-triggered switching in industrial batch polymerization process*, Journal of Process Control 163 (2026), 103738. [DOI: 10.1016/j.jprocont.2026.103738](https://doi.org/10.1016/j.jprocont.2026.103738) · [Preprint](https://arxiv.org/abs/2606.14976).
+- **Original public Simulink model:** Simin Li, [A Semi-batch Polymerization Process for Fault Simulation](https://www.mathworks.com/matlabcentral/fileexchange/169341-a-semi-batch-polymerization-process-for-fault-simulation), MATLAB Central File Exchange; first released in July 2024.
+
+This repository accompanies the ARC paper. It includes the shared reactor equations and the nominal/adaptive NMPC implementations used for its comparison. It does not provide a complete reproduction package for the earlier real-time NMPC framework or the original fault-monitoring study. The File Exchange distribution is a separate Simulink implementation with its own license.
 
 ## Scope and attribution
 

@@ -50,7 +50,7 @@ The MATLAB CasADi distribution must be available in `.runtime/casadi/matlab`, as
 
 ## Full main comparison
 
-Five paired seeds, 200–204, four scenarios, and three controllers give 60 main runs. `N` is nominal; `PM_plus` and `PM_minus` have the declared opposite reaction-heat/heat-transfer mismatches; `F` adds the gel-effect fault to the adverse mismatch.
+Five paired seeds, 200â€“204, four scenarios, and three controllers give 60 main runs. `N` is nominal; `PM_plus` and `PM_minus` have the declared opposite reaction-heat/heat-transfer mismatches; `F` adds the gel-effect fault to the adverse mismatch.
 
 ```sh
 python arc4batch.py noise

@@ -29,6 +29,10 @@ These four engines retain the evaluated numerical expressions, with renamed modu
 
 `plot_results.py` draws the study trajectories and utility signals. `plot_parameter_validation.py` draws the estimator checks. All generated figures go to `outputs/`. The two physical/recipe drawings use the small LaTeX sources in `docs/figure_sources/` and need a LaTeX installation only when regenerated.
 
+## Verification
+
+`verification/check.py` checks source and model integrity and, optionally, archived results. `verification/test_numerics.py` checks the reduced dynamics, constraints, estimator behavior and completion metrics. Run both through `python arc4batch.py check`; these files protect reproduction against broken inputs or numerical regressions.
+
 ## What is deliberately excluded
 
 Reviewer replies, marked manuscripts, draft table generators, exploratory runs, dependency binaries, temporary logs, and the working repository's history are not part of this code repository. The optional data archive retains both successful and failed scientific runs; those outcomes are evidence rather than temporary clutter.

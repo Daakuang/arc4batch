@@ -28,7 +28,7 @@ def main():
     ParameterModel()
     assert screen(8,40)['passes'] and not screen(8,80)['passes']
     envelopes = audit_envelopes()
-    tests = unittest.defaultTestLoader.discover(str(ROOT/'tests'))
+    tests = unittest.defaultTestLoader.discover(str(ROOT/'verification'))
     result = unittest.TextTestRunner(verbosity=1).run(tests)
     assert result.wasSuccessful()
     report = {'source_files_verified':len(provenance['files']), 'numerical_tests':result.testsRun,
