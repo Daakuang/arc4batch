@@ -1,0 +1,173 @@
+{
+  "version": "1.0.1",
+  "files": [
+    {
+      "path": "src/arc4batch/analyze_results.py",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/analyze_results.py",
+      "original_sha256": "72cffc034722e6a80872b54f281c2bbfecac6b11358e6a05d6cf03fa8634ebde",
+      "sha256": "97244cb27ef2723fdc84da0fd7369b7dea688e6f209ab66a1c2b7b0ace951cb9",
+      "change": "Identical metric calculations; generated summary redirected to outputs."
+    },
+    {
+      "path": "src/arc4batch/parameter_model.py",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/parameter_model.py",
+      "original_sha256": "f2ed50cfebf166d43e5020a4f15074d298de27db90afee1ba0012781bee36ff2",
+      "sha256": "f2ed50cfebf166d43e5020a4f15074d298de27db90afee1ba0012781bee36ff2",
+      "change": "Exact validated source; directory relocated."
+    },
+    {
+      "path": "src/arc4batch/quality_model.py",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/quality_model.py",
+      "original_sha256": "c606b5d067663fd86002d454493a9ce3513f0d5a1eaa11b13af99e60027c6543",
+      "sha256": "c606b5d067663fd86002d454493a9ce3513f0d5a1eaa11b13af99e60027c6543",
+      "change": "Exact validated source; directory relocated."
+    },
+    {
+      "path": "src/arc4batch/quality_controller.py",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/quality_controller.py",
+      "original_sha256": "3333fe8f8ada0573063ff4ffba32747ea1b617183063e1723a60419777ccdff4",
+      "sha256": "3333fe8f8ada0573063ff4ffba32747ea1b617183063e1723a60419777ccdff4",
+      "change": "Exact validated source; directory relocated."
+    },
+    {
+      "path": "src/arc4batch/run_quality_nmpc.py",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/run_quality_nmpc.py",
+      "original_sha256": "d2b09bd9675b2611bbdbfdf3a8db182995e1407e595706556d2f1d159c0d517f",
+      "sha256": "d2b09bd9675b2611bbdbfdf3a8db182995e1407e595706556d2f1d159c0d517f",
+      "change": "Exact validated source; directory relocated."
+    },
+    {
+      "path": "src/arc4batch/run_quality_suite.py",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/run_quality_suite.py",
+      "original_sha256": "e486f41ed3f98372ef907f36e576332c8701d784a9beab1dc64ecf3b0797d704",
+      "sha256": "e486f41ed3f98372ef907f36e576332c8701d784a9beab1dc64ecf3b0797d704",
+      "change": "Exact validated source; directory relocated."
+    },
+    {
+      "path": "src/arc4batch/run_quality_stress.py",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/run_quality_stress.py",
+      "original_sha256": "131bb3b42824ff6403a237dcc786565e95588670a905381cbbe796141d0f56ba",
+      "sha256": "131bb3b42824ff6403a237dcc786565e95588670a905381cbbe796141d0f56ba",
+      "change": "Exact validated source; directory relocated."
+    },
+    {
+      "path": "src/arc4batch/prepare_noise.py",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/prepare_noise.py",
+      "original_sha256": "ae01d2752a6054e121b27017801e224b8c98cfc82ffbd7493cc95919479395e6",
+      "sha256": "ae01d2752a6054e121b27017801e224b8c98cfc82ffbd7493cc95919479395e6",
+      "change": "Exact validated source; directory relocated."
+    },
+    {
+      "path": "src/arc4batch/reduced_model.py",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/reduced_model.py",
+      "original_sha256": "e7ef790ecc52be47d4276253772d39cfc83275e15fcb0a70cc3e4c8ee790635d",
+      "sha256": "e7ef790ecc52be47d4276253772d39cfc83275e15fcb0a70cc3e4c8ee790635d",
+      "change": "Exact validated source; directory relocated."
+    },
+    {
+      "path": "src/arc4batch/run_reduced_reference.py",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/run_reduced_reference.py",
+      "original_sha256": "9f9c90a4c454f1a8a95205b8891c21c903b35beabcbbe76b9260f9957d7ed760",
+      "sha256": "9f9c90a4c454f1a8a95205b8891c21c903b35beabcbbe76b9260f9957d7ed760",
+      "change": "Exact validated source; directory relocated."
+    },
+    {
+      "path": "src/arc4batch/reduced_with_heat_selector.py",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/reduced_with_heat_selector.py",
+      "original_sha256": "4765f876aafe021ffdb73118eb07a4ef558afd3d4a6c4d9f929a90858862e3cb",
+      "sha256": "4765f876aafe021ffdb73118eb07a4ef558afd3d4a6c4d9f929a90858862e3cb",
+      "change": "Exact validated source; directory relocated."
+    },
+    {
+      "path": "src/arc4batch/plot_revision_figures.py",
+      "source": "scripts/jpc_revision/plot_revision_figures.py",
+      "original_sha256": "84e23658661a35d7a2bbe16763b126a8870dd22b9f28da0a1c5eb63e4bc79314",
+      "sha256": "da94de74d4d48b0f95ac2baac7f7d6f33ed4f98639b7c3a366730bf7e837d341",
+      "change": "Current manuscript labels; generated figures redirected to outputs."
+    },
+    {
+      "path": "src/arc4batch/plot_parameter_validation.py",
+      "source": "scripts/jpc_revision/plot_parameter_validation.py",
+      "original_sha256": "615c23de75501931355c5c0f9c9cf90c959a1836c5b58d8605cfc5f13ae5e4e5",
+      "sha256": "8d0e2a94e085657eaabecf69297c86a933e4af45a01ed160894b98bc49680bf6",
+      "change": "Current manuscript labels; generated figures redirected to outputs."
+    },
+    {
+      "path": "src/arc4batch/artifact_paths.py",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/artifact_paths.py",
+      "original_sha256": "5154a62c2ebbd661bf87b167259f8029c9f9b0f0d05e3f2b941313c55383af3c",
+      "sha256": "5154a62c2ebbd661bf87b167259f8029c9f9b0f0d05e3f2b941313c55383af3c",
+      "change": "Exact validated source; directory relocated."
+    },
+    {
+      "path": "src/arc4batch/vpc_tuning.py",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/industrial_tuning_bridge.py",
+      "original_sha256": "de7558a087412edc2412e4b12ba733eede2bc77d1e35b591d609b5ca8939b880",
+      "sha256": "9c504a68b251e02d999107492455423fc43bfb493e55a3b8c3c119ba10c2a061",
+      "change": "Six unchanged tuning functions extracted; no experiment/report orchestration."
+    },
+    {
+      "path": "matlab/arc_pid_revision.m",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/matlab/arc_pid_revision.m",
+      "original_sha256": "2cc6440b342e0a8b4ad5844cb8f6720113c5c684a986c895861054682a490cb4",
+      "sha256": "2cc6440b342e0a8b4ad5844cb8f6720113c5c684a986c895861054682a490cb4",
+      "change": "MATLAB source; only repository search path adjusted where needed."
+    },
+    {
+      "path": "matlab/arc_pid_stress.m",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/matlab/arc_pid_stress.m",
+      "original_sha256": "61db503bab7a6afa1b58b87d88db14c3699a313f85730773d59c82d2bf8e2a80",
+      "sha256": "61db503bab7a6afa1b58b87d88db14c3699a313f85730773d59c82d2bf8e2a80",
+      "change": "MATLAB source; only repository search path adjusted where needed."
+    },
+    {
+      "path": "matlab/export_models.m",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/matlab/export_models.m",
+      "original_sha256": "0a7a96d41190981c658f924022f610eeb236a0bc9fc2ace70c4e943977d3c0b7",
+      "sha256": "cce9e81972fc774681468595b7a4e17cfc6d8b66bada771b5f2c659f3f256a8d",
+      "change": "MATLAB source; only repository search path adjusted where needed."
+    },
+    {
+      "path": "matlab/ptfe.m",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/matlab/ptfe.m",
+      "original_sha256": "551efee7d9312533a97ce99074acce6286c8ed702425ea8f3b6f0da8964fb0dd",
+      "sha256": "f2bbcd5ee30f5bf77e8476692f8263226c6dceddf24c40666126526a6b1c8cbb",
+      "change": "MATLAB source; only repository search path adjusted where needed."
+    },
+    {
+      "path": "matlab/ptfe_reduced.m",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/matlab/ptfe_reduced.m",
+      "original_sha256": "e68d66b13ae429a87bb78c53958e72c481486d62f4670f209be81b76af0f9a89",
+      "sha256": "e68d66b13ae429a87bb78c53958e72c481486d62f4670f209be81b76af0f9a89",
+      "change": "MATLAB source; only repository search path adjusted where needed."
+    },
+    {
+      "path": "matlab/run_arc_additional.m",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/matlab/run_arc_additional.m",
+      "original_sha256": "c58dabbcd8043a2c5567e5709bc564be85010cfbd3319e062ee3de9840601ea2",
+      "sha256": "c472be2c2ff8b1bbed347947741356149900d7c4ca522c8caec52bf19411b39e",
+      "change": "MATLAB source; only repository search path adjusted where needed."
+    },
+    {
+      "path": "matlab/run_arc_revision.m",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/matlab/run_arc_revision.m",
+      "original_sha256": "427321282dbe2fc859e46a91d1d0bf768acd86c22bb122bcfd8550767894d01c",
+      "sha256": "d491a5fcb8b1e44b7bf33e533d02e12776cbe5eba2bc1395e01c8f8da04c5a71",
+      "change": "MATLAB source; only repository search path adjusted where needed."
+    },
+    {
+      "path": "matlab/run_arc_suite.m",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/matlab/run_arc_suite.m",
+      "original_sha256": "a2208aaa7585b095ea34bb2d18cfb44601fe59226283fc831c293b739e33704a",
+      "sha256": "8a78364e9757ab3bcb42181090f03a843555cc1ac84ee87e9582d008be191422",
+      "change": "MATLAB source; only repository search path adjusted where needed."
+    },
+    {
+      "path": "matlab/run_industrial_tuning_bridge.m",
+      "source": "public_release/staging/arc4batch-v1.0.0/scripts/jpc_revision/matlab/run_industrial_tuning_bridge.m",
+      "original_sha256": "80673b923fb5c970920792778274824d4decb1ae2dd75390d65bd63659a6cc78",
+      "sha256": "c8bbb4a586db07318f6c8c535d16089dc4479c167dba896c074c3178a37b097f",
+      "change": "MATLAB source; only repository search path adjusted where needed."
+    }
+  ]
+}

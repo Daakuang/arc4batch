@@ -1,0 +1,8 @@
+{
+  "recorded_utc": "2026-09-08T03:19:15.932520+00:00",
+  "finished_NMPC_evaluation_cases_at_record": 0,
+  "primary_time": "Physical completion plus full two-sided hold recipe and all-time temperature/pressure operating upper bounds; all prescribed cases remain in completion counts.",
+  "tracking": "Mean per-run MAE and worst absolute value across all nonempty recorded windows, with contributing temperature/pressure run counts; include incomplete trajectories.",
+  "endpoint_properties": "Descriptive means among physical completions, with counts; no unspecified grade-acceptance claim.",
+  "reason": "Use the same population for each tracking mean/maximum pair and make empty or prematurely terminated windows explicit. This reporting clarification changes neither simulation settings nor primary conformity classification."
+}

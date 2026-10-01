@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.runtime/
+*.log
+outputs/
+results/*
+!results/jpc_revision_20260907/
+results/jpc_revision_20260907/*
+!results/jpc_revision_20260907/models/
+!results/jpc_revision_20260907/arc_frozen_protocol.json
+!results/jpc_revision_20260907/quality_priority/
+results/jpc_revision_20260907/quality_priority/*
+!results/jpc_revision_20260907/quality_priority/frozen_protocol.json
+!results/jpc_revision_20260907/quality_priority/design_selection.json
+!results/jpc_revision_20260907/quality_priority/reporting_protocol.json

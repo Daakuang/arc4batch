@@ -1,0 +1,77 @@
+{
+  "created_utc": "2026-09-08T03:00:57.605568+00:00",
+  "seeds": [
+    200,
+    201,
+    202,
+    203,
+    204
+  ],
+  "controllers": [
+    "ARC",
+    "NMPC",
+    "A_NMPC"
+  ],
+  "scenarios": [
+    "N",
+    "PM_minus",
+    "PM_plus",
+    "F"
+  ],
+  "design_seeds": [
+    90,
+    191
+  ],
+  "source_hashes": {
+    "run_quality_nmpc.py": "d2b09bd9675b2611bbdbfdf3a8db182995e1407e595706556d2f1d159c0d517f",
+    "parameter_model.py": "f2ed50cfebf166d43e5020a4f15074d298de27db90afee1ba0012781bee36ff2",
+    "quality_controller.py": "3333fe8f8ada0573063ff4ffba32747ea1b617183063e1723a60419777ccdff4",
+    "quality_model.py": "c606b5d067663fd86002d454493a9ce3513f0d5a1eaa11b13af99e60027c6543"
+  },
+  "source_sha256": "07818cf6a490a9b550376c41585d84f202ed422f499fc8f538f98f78ad76cfab",
+  "model_hashes": {
+    "reduced.json": "e980f87afc26c55fa06c918ae0383c3a6be7b0dd7331684c27f70afb0f7b14ed",
+    "reduced_f.casadi": "f925fc172ab30f6e39aa5d60f287ca3f11ad32d5af3d5d20ffc7b6bc1d7241f9",
+    "plant_0.json": "b22f25308a11c8ad0f55a136856f502c656a64c2fc845dd9911debaedcaf3cb4",
+    "plant_1.json": "a6c022e7589958ff9665b6cac79140da68ecc8a24b56ef0f526de7cabf7b048c",
+    "plant_flow_0.casadi": "65c098f7bc611f524a5ab87fa5f79c4fc8ac5c3ec177bbdd103ddfd554c396a6",
+    "plant_flow_1.casadi": "8fc3d69c6776637bd542d85130a136a18d196b783d7ec949d5b3919859bef46e"
+  },
+  "design_audit_sha256": "b2aa4636b6ff9d38216b118cd92e51a464eac1da44bfbdd6ce093e243a2d1619",
+  "design_selection_sha256": "91b253a0e51c96bc63cd3a4871c31a4afa9e63769e9d20d015ab20083e9345ba",
+  "settings": {
+    "T_ref_K": 351,
+    "T_recipe_lower_K": 350.3,
+    "T_operating_K": 351.7,
+    "hold_start_s": 3300,
+    "P_operating_MPa": 1.6,
+    "T_trip_K": 373.15,
+    "temperature_weight": 833.3333333333334,
+    "startup_temperature_weight": 0.8333333333333334,
+    "common_objective_scale": 0.001,
+    "EKF_period_s": 1,
+    "NMPC_period_s": 30,
+    "horizon_s": 1800,
+    "parameter_random_walk_std": 0.0001,
+    "initial_parameter_std": 0.2,
+    "parameter_bounds": [
+      0.5,
+      1.5
+    ],
+    "max_iterations_per_attempt": 500,
+    "primal_acceptance_tolerance": 1e-06,
+    "attempts": 2,
+    "solver_success_required": true,
+    "recovery": "hard future operating upper bounds and two-sided hold recipe first; penalized common slacks after failure or an already-violating estimate",
+    "backup": "zero feeds and maximum cooling with physical actuator dynamics"
+  },
+  "software": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "casadi": "3.8.0",
+    "host": "Windows-11-10.0.26200-SP0"
+  },
+  "interpretation": "Temperature-recipe conformity precedes productivity comparison. Pressure deviation is subordinate. All failures and nonconformities remain reported.",
+  "distinction": "Code/settings frozen before first seed-200--204 NMPC evaluation. ARC settings were previously frozen and are unchanged."
+}

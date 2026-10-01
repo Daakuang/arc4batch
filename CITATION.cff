@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the version of arc4batch used in your work and the associated scientific paper."
+type: software
+title: "arc4batch: Advanced regulatory control for cooling-limited semibatch reactors"
+authors:
+  - family-names: Zhou
+    given-names: Chenchen
+version: 1.0.1
+license: MIT
+keywords:
+  - advanced regulatory control
+  - semibatch polymerization
+  - nonlinear model predictive control
+  - reproducibility
+repository-code: "https://github.com/Daakuang/arc4batch"

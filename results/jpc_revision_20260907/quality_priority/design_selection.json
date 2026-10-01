@@ -1,0 +1,8 @@
+{
+  "reviewed": true,
+  "created_utc": "2026-09-08T03:00:57.386280+00:00",
+  "temperature_weight": 833.3333333333334,
+  "evaluation_outcomes_not_used": true,
+  "rationale": "Choose the smaller of two temperature-priority weights from the pre-evaluation N/F adaptive design comparison. Both satisfy the full recipe and operating upper bounds. The smaller weight gives lower mean temperature errors, shorter completed times, and no increase in backup use; its slightly larger F maximum temperature error remains well inside the recipe. No final evaluation outcome is used.",
+  "publication_rationale": "Two hold weights, 833.333 and 8333.333, were compared before evaluation. In the separate N and F adaptive design cases, both meet the full temperature recipe and operating upper bounds. The smaller weight gives temperature MAEs of 0.0245 and 0.0444 K, compared with 0.0599 and 0.0607 K, and batch times of 3.702 and 4.102 h, compared with 3.815 and 4.121 h. It is therefore retained for both NMPC variants; this is a closed-loop design choice, not a monotonicity claim about cost weights."
+}

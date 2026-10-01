@@ -1,0 +1,8 @@
+{
+  "scripts\\jpc_revision\\matlab\\arc_pid_revision.m": "2cc6440b342e0a8b4ad5844cb8f6720113c5c684a986c895861054682a490cb4",
+  "scripts\\jpc_revision\\matlab\\arc_pid_stress.m": "61db503bab7a6afa1b58b87d88db14c3699a313f85730773d59c82d2bf8e2a80",
+  "scripts\\jpc_revision\\matlab\\ptfe.m": "551efee7d9312533a97ce99074acce6286c8ed702425ea8f3b6f0da8964fb0dd",
+  "scripts\\jpc_revision\\matlab\\run_arc_revision.m": "427321282dbe2fc859e46a91d1d0bf768acd86c22bb122bcfd8550767894d01c",
+  "scripts\\jpc_revision\\matlab\\run_arc_suite.m": "a2208aaa7585b095ea34bb2d18cfb44601fe59226283fc831c293b739e33704a",
+  "scripts\\jpc_revision\\matlab\\run_arc_additional.m": "c58dabbcd8043a2c5567e5709bc564be85010cfbd3319e062ee3de9840601ea2"
+}
