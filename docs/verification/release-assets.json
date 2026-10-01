@@ -1,9 +1,9 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.2",
   "results": {
-    "file": "arc4batch-v1.0.0-results.zip",
-    "bytes": 313120861,
-    "sha256": "4690a10d58dfe31458c69a44660202c4043f2d7bcccd266899b8432dd4e1da57",
+    "file": "arc4batch-v1.0.2-results.zip",
+    "bytes": 313105493,
+    "sha256": "74467a1308393495ec81a3eea53c16521545342470c101ed040439b76f8d1214",
     "files": 311
   }
 }

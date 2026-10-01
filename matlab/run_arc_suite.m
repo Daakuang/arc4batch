@@ -10,7 +10,7 @@ end
 for seed=seeds
     for j=1:numel(scenarios)
         for k=1:numel(variants)
-            run_arc_revision(root,scenarios{j},seed,30000,variants{k});
+            simulate_arc(root,scenarios{j},seed,30000,variants{k});
         end
     end
 end

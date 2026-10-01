@@ -5,7 +5,7 @@ title: "arc4batch: Advanced regulatory control for cooling-limited semibatch rea
 authors:
   - family-names: Zhou
     given-names: Chenchen
-version: 1.0.1
+version: 1.0.2
 license: MIT
 keywords:
   - advanced regulatory control

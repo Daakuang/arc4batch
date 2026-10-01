@@ -5,16 +5,16 @@ import json,csv,re,argparse
 import numpy as np
 from scipy.io import loadmat
 import casadi as ca
-ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'results/jpc_revision_20260907'
+ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'results/study'
 FINAL_SEEDS=range(200,205)
 CONTROLLERS=['ARC','NMPC','A_NMPC']
 
 def run_folder(scenario,controller,seed):
-    base=OUT if controller.startswith('ARC') else OUT/'quality_priority/evaluation'
+    base=OUT if controller.startswith('ARC') else OUT/'nmpc/evaluation'
     return base/f'{scenario}_{controller}_seed{seed:03d}'
 
 def stress_folder(scenario,controller):
-    base=OUT/'stress' if controller.startswith('ARC') else OUT/'quality_priority/stress'
+    base=OUT/'stress' if controller.startswith('ARC') else OUT/'nmpc/stress'
     return base/f'{scenario}_{controller}_seed050'
 
 def metric(t,x,u,*,scenario,controller,seed,solver=None,declared_status=None):
@@ -146,9 +146,9 @@ def main():
     (output_dir()/'results_summary.json').write_text(json.dumps(summary,indent=2))
     if a.require_complete:
         assert not pending,pending
-        protocol=json.loads((OUT/'quality_priority/frozen_protocol.json').read_text())
-        expected=protocol['source_sha256']
-        assert all(r['source_sha256']==expected for r in records if r['controller']!='ARC')
+        protocol=json.loads((OUT/'nmpc/frozen_protocol.json').read_text())
+        expected=(protocol['source_sha256'],protocol['evaluation_source_sha256'])
+        assert all(r['source_sha256'] in expected for r in records if r['controller']!='ARC')
         for r in records:
             if r['controller']=='ARC':continue
             cfg=json.loads((run_folder(r['scenario'],r['controller'],r['seed'])/'config.json').read_text())

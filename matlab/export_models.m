@@ -2,7 +2,7 @@ function export_models(root)
 import casadi.*
 addpath(fullfile(root,'.runtime','casadi','matlab'));
 addpath(fullfile(root,'matlab'));
-dest=fullfile(root,'results','jpc_revision_20260907','models');
+dest=fullfile(root,'results','study','models');
 if ~exist(dest,'dir'), mkdir(dest); end
 for fault=0:1
     [s,p]=ptfe(struct('tf',1,'isFault',fault));

@@ -21,8 +21,8 @@ def main():
     provenance = json.loads((ROOT/'docs/verification/source-provenance.json').read_text())
     for entry in provenance['files']:
         assert digest(ROOT/entry['path']) == entry['sha256'], entry['path']
-    from run_quality_suite import verify_source
-    from parameter_model import ParameterModel
+    from run_nmpc_suite import verify_source
+    from adaptive_model import ParameterModel
     from vpc_tuning import audit_envelopes, screen
     protocol = verify_source()
     ParameterModel()
@@ -32,7 +32,7 @@ def main():
     result = unittest.TextTestRunner(verbosity=1).run(tests)
     assert result.wasSuccessful()
     report = {'source_files_verified':len(provenance['files']), 'numerical_tests':result.testsRun,
-              'frozen_nmpc_and_models':'verified', 'conditional_tuning_checks':envelopes}
+              'release_source_and_evaluated_models':'verified', 'conditional_tuning_checks':envelopes}
     if args.results:
         manifest = json.loads((ROOT/'docs/verification/results-manifest.json').read_text())
         for entry in manifest:

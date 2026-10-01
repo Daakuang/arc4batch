@@ -54,8 +54,8 @@ def main():
         sys.argv = ['verify_release.py', *remaining]
         runpy.run_path(str(ROOT / 'tools/verify_release.py'), run_name='__main__')
     elif args.command == 'demo':
-        run_script('run_reduced_reference')
-        run_script('reduced_with_heat_selector')
+        run_script('solve_reduced_reference')
+        run_script('reduced_arc')
     elif args.command == 'import-results':
         if len(remaining) != 1:
             parser.error('import-results needs the path to the matching results ZIP')
@@ -63,14 +63,14 @@ def main():
     elif args.command == 'summarize':
         run_script('analyze_results', ['--require-complete', *remaining])
     elif args.command == 'plot':
-        run_script('plot_revision_figures', remaining or ['trajectories'])
+        run_script('plot_results', remaining or ['trajectories'])
     elif args.command == 'tuning':
         sys.path.insert(0, str(SOURCE))
         import json
         from vpc_tuning import screen
         print(json.dumps([screen(gain, integral_time) for gain, integral_time in [(6,40),(8,80),(8,40),(10,40)]], indent=2))
     else:
-        target = {'noise':'prepare_noise', 'nmpc':'run_quality_nmpc', 'suite':'run_quality_suite'}[args.command]
+        target = {'noise':'prepare_noise', 'nmpc':'simulate_nmpc', 'suite':'run_nmpc_suite'}[args.command]
         run_script(target, remaining)
 
 

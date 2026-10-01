@@ -33,7 +33,7 @@
     "seed": 301,
     "max_steps": 30000,
     "noise": "PCG64 seed 301 standard_normal shape (5,30001), paired across all candidates and scenarios",
-    "all_other_settings": "unchanged run_arc_revision settings, including target -0.95 and all actuator dynamics",
+    "all_other_settings": "unchanged simulate_arc settings, including target -0.95 and all actuator dynamics",
     "metrics": "Existing true-state full recipe and completion metrics; all twelve batches reported regardless of outcome"
   },
   "conditions": ["Temperature cascade and both economic channels enabled", "Integral updates active before dose completion throughout finite response window", "Sustained measured virtual-demand inequality", "Recovery window has enough remaining initiator dose; no dose clipping", "0 < sample_s / initiator_tau_s <= 1"],

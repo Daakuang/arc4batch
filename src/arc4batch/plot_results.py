@@ -94,7 +94,7 @@ def signals():
 def diagrams():
     """Compile local corrections to the submitted process and recipe drawings."""
     import subprocess
-    for name in ['control_structure_revision','mode_transition_revision']:
+    for name in ['control_structure','operating_phases']:
         subprocess.run(['latexmk','-norc','-pdf','-interaction=nonstopmode','-halt-on-error','-outdir='+str(output_dir()),name+'.tex'],cwd=ROOT/'docs/figure_sources',check=True)
 
 if __name__=='__main__':
@@ -103,5 +103,5 @@ if __name__=='__main__':
     if a.part=='diagrams':diagrams()
     elif a.part=='signals':signals()
     else:
-        trajectory(['PM_plus'],'industrial_pmplus_revision')
-        trajectory(['N','F'],'industrial_nominal_fault_revision');signals()
+        trajectory(['PM_plus'],'parameter_mismatch')
+        trajectory(['N','F'],'nominal_and_fault');signals()

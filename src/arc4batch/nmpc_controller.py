@@ -2,7 +2,7 @@
 import time
 import numpy as np
 import casadi as ca
-from parameter_model import SCALE_U,LOW_U,INIT_U,arr
+from adaptive_model import SCALE_U,LOW_U,INIT_U,arr
 
 class QualityController:
     def __init__(self,model,horizon=60):

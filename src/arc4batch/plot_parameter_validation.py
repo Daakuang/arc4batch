@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from parameter_model import OUT,ROOT
+from adaptive_model import OUT,ROOT
 
 def main():
     plt.rcParams.update({'font.size':9,'pdf.fonttype':42,'ps.fonttype':42})

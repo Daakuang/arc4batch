@@ -1,7 +1,7 @@
 function run_arc_additional(root)
 addpath(fullfile(root,'.runtime','casadi','matlab'));
 addpath(fullfile(root,'matlab'));
-base=fullfile(root,'results','jpc_revision_20260907');
+base=fullfile(root,'results','study');
 for j=1:5
     [sys,par]=ptfe(struct('tf',1,'isFault',false));
     par.max_steps=30000; par.initial_actuator=[.694;0;0]; par.plot_fig=false;
@@ -18,8 +18,8 @@ for j=1:5
     if strcmp(scenario,'PM_plus'),dk(1:2)=dk(1:2).*[1.2;.8];end
     par.seed=seed;nd=load(fullfile(base,sprintf('noise_%03d.mat',seed)),'paired_noise');
     par.paired_noise=nd.paired_noise;clock=tic;
-    if j<=3,[~,~,SimData]=arc_pid_revision(sys,par,dk);
-    else,[~,~,SimData]=arc_pid_stress(sys,par,dk);end
+    if j<=3,[~,~,SimData]=arc_controller(sys,par,dk);
+    else,[~,~,SimData]=arc_controller_stress(sys,par,dk);end
     elapsed=toc(clock);
     folder=fullfile(base,kind,sprintf('%s_%s_seed%03d',scenario,controller,seed));
     if ~exist(folder,'dir'),mkdir(folder);end

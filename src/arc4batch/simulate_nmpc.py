@@ -4,18 +4,18 @@ import argparse,json,time,hashlib,sys
 import numpy as np
 import casadi as ca
 from scipy.io import savemat
-from parameter_model import ParameterModel,ParameterEKF,ROOT,OUT,MODELS,PLANT_OBS,MEAS_STD,SCALE_U,LOW_U,INIT_U,TAU,RATE,arr
-from quality_controller import QualityController as ParameterController
-from quality_model import QualityModel as ParameterModel
+from adaptive_model import ParameterModel,ParameterEKF,ROOT,OUT,MODELS,PLANT_OBS,MEAS_STD,SCALE_U,LOW_U,INIT_U,TAU,RATE,arr
+from nmpc_controller import QualityController as ParameterController
+from nmpc_model import QualityModel as ParameterModel
 
 def run(a):
     controller='A_NMPC' if a.adaptive else 'NMPC'
-    base=OUT/'quality_priority'/('evaluation' if a.evaluation else 'design')
+    base=OUT/'nmpc'/('evaluation' if a.evaluation else 'design')
     base.mkdir(parents=True,exist_ok=True)
     folder=base/f'{a.scenario}_{controller}_seed{a.seed:03d}'
     if (folder/'config.json').exists():raise RuntimeError('Refusing to overwrite a run: '+str(folder))
     folder.mkdir(exist_ok=True)
-    sources=[Path(__file__),Path(__file__).with_name('parameter_model.py'),Path(__file__).with_name('quality_controller.py'),Path(__file__).with_name('quality_model.py')]
+    sources=[Path(__file__),Path(__file__).with_name('adaptive_model.py'),Path(__file__).with_name('nmpc_controller.py'),Path(__file__).with_name('nmpc_model.py')]
     source_hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sources}
     config=dict(vars(a),controller=controller,status='running',source_hashes=source_hashes,
                 source_sha256=hashlib.sha256(json.dumps(source_hashes,sort_keys=True).encode()).hexdigest(),

@@ -1,4 +1,4 @@
-function [performance,fig,SimData]=arc_pid_stress(sys,par,dk)
+function [performance,fig,SimData]=arc_controller(sys,par,dk)
 
 
 % ARC_PID Advanced Regulatory Control for Batch Polymerization
@@ -85,9 +85,9 @@ if isfield(par, 'VPC_Psp_Overload_Gain'), VPC_Psp_Overload_Gain = par.VPC_Psp_Ov
 
 % --- Actuator Model Parameters ---
 % First-order lag time constants (seconds)
-tau_FA = 10.0;       % Time constant for FA actuator
-tau_FB = 10.0;       % Time constant for FB actuator
-tau_Alpha = 6.0;    % Time constant for Alpha actuator
+tau_FA = 5.0;       % Time constant for FA actuator
+tau_FB = 5.0;       % Time constant for FB actuator
+tau_Alpha = 3.0;    % Time constant for Alpha actuator
 
 % Rate limits (max change per second)
 du_max_FA = par.ubu(1) * 0.05;      % Max 20% of range per second

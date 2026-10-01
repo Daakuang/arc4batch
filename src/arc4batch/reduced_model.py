@@ -1,4 +1,4 @@
-"""Reduced benchmark constants and exact numerical reference used in the revision."""
+"""Reduced benchmark constants and exact numerical reference used in the study."""
 
 import casadi as ca
 

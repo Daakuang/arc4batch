@@ -23,12 +23,12 @@
     191
   ],
   "source_hashes": {
-    "run_quality_nmpc.py": "d2b09bd9675b2611bbdbfdf3a8db182995e1407e595706556d2f1d159c0d517f",
-    "parameter_model.py": "f2ed50cfebf166d43e5020a4f15074d298de27db90afee1ba0012781bee36ff2",
-    "quality_controller.py": "3333fe8f8ada0573063ff4ffba32747ea1b617183063e1723a60419777ccdff4",
-    "quality_model.py": "c606b5d067663fd86002d454493a9ce3513f0d5a1eaa11b13af99e60027c6543"
+    "simulate_nmpc.py": "aaf74ae33520d1d4deb624cccad85305d3503048706b966d304f2c7c469e61d8",
+    "adaptive_model.py": "79496cd42d86c9836fdf96cd3310ce7736cc25a259e48171301085cebb00d961",
+    "nmpc_controller.py": "e24ddd55e2b03f2eba7c25a92544a5c4cd3bdb253cf370b702f2724dfd967382",
+    "nmpc_model.py": "0d8c6164f6ad91f8f46cde87c6ae52d394c5e3fae7f7876180c51851602ec283"
   },
-  "source_sha256": "07818cf6a490a9b550376c41585d84f202ed422f499fc8f538f98f78ad76cfab",
+  "source_sha256": "55a94c9cf32575491347617d7d51e3ec5bfc03e1965360839d9738340cff40f6",
   "model_hashes": {
     "reduced.json": "e980f87afc26c55fa06c918ae0383c3a6be7b0dd7331684c27f70afb0f7b14ed",
     "reduced_f.casadi": "f925fc172ab30f6e39aa5d60f287ca3f11ad32d5af3d5d20ffc7b6bc1d7241f9",
@@ -73,5 +73,13 @@
     "host": "Windows-11-10.0.26200-SP0"
   },
   "interpretation": "Temperature-recipe conformity precedes productivity comparison. Pressure deviation is subordinate. All failures and nonconformities remain reported.",
-  "distinction": "Code/settings frozen before first seed-200--204 NMPC evaluation. ARC settings were previously frozen and are unchanged."
+  "distinction": "Code/settings frozen before first seed-200--204 NMPC evaluation. ARC settings were previously frozen and are unchanged.",
+  "evaluation_source_hashes": {
+    "simulate_nmpc.py": "d2b09bd9675b2611bbdbfdf3a8db182995e1407e595706556d2f1d159c0d517f",
+    "adaptive_model.py": "f2ed50cfebf166d43e5020a4f15074d298de27db90afee1ba0012781bee36ff2",
+    "nmpc_controller.py": "3333fe8f8ada0573063ff4ffba32747ea1b617183063e1723a60419777ccdff4",
+    "nmpc_model.py": "c606b5d067663fd86002d454493a9ce3513f0d5a1eaa11b13af99e60027c6543"
+  },
+  "evaluation_source_sha256": "07818cf6a490a9b550376c41585d84f202ed422f499fc8f538f98f78ad76cfab",
+  "release_version": "1.0.2"
 }
