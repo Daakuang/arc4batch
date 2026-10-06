@@ -1,6 +1,6 @@
 # Reproducing the study
 
-Run commands from the repository root. Use the recorded Python dependencies and MATLAB/CasADi versions in `verification/environment-original.txt` for the closest numerical reproduction. Solver trajectories and timings can differ across platforms.
+Run commands from the repository root. Use the recorded Python dependencies and MATLAB/CasADi versions in `docs/verification/environment-original.txt` for the closest numerical reproduction. Solver trajectories and timings can differ across platforms.
 
 ## Quick example and checks
 
@@ -14,7 +14,7 @@ The reduced example requires no archived industrial results. It writes generated
 
 ## Archived results
 
-The matching data archive is `arc4batch-v1.0.2-results.zip`; its checksum is in `verification/release-assets.json`. This archive uses the same descriptive paths as the source release. Raw trajectories and run metadata retain their evaluated contents.
+The matching data archive is `arc4batch-v1.0.2-results.zip`; its checksum is in `docs/verification/release-assets.json`. This archive uses the same descriptive paths as the source release. Raw trajectories and run metadata retain their evaluated contents.
 
 ```sh
 python arc4batch.py import-results /path/to/arc4batch-v1.0.2-results.zip
@@ -50,7 +50,7 @@ The MATLAB CasADi distribution must be available in `.runtime/casadi/matlab`, as
 
 ## Full main comparison
 
-Five paired seeds, 200â€“204, four scenarios, and three controllers give 60 main runs. `N` is nominal; `PM_plus` and `PM_minus` have the declared opposite reaction-heat/heat-transfer mismatches; `F` adds the gel-effect fault to the adverse mismatch.
+Five paired seeds, 200–204, four scenarios, and three controllers give 60 main runs. `N` is nominal; `PM_plus` and `PM_minus` have the declared opposite reaction-heat/heat-transfer mismatches; `F` adds the gel-effect fault to the adverse mismatch.
 
 ```sh
 python arc4batch.py noise
@@ -91,6 +91,6 @@ Regenerating the two LaTeX drawings requires `latexmk` and the usual TikZ/PGFPlo
 
 ## Verification record
 
-`verification/source-provenance.json` maps each retained source to its validated predecessor. An AST comparison verifies that the four NMPC engines differ only in module names and artifact paths. Metric calculations and tuning functions retain their numerical expressions. The cleanup changes module names, entry points, artifact destinations, figure labels, MATLAB search paths, and documentation. Both evaluation and release source identities are recorded.
+`docs/verification/source-provenance.json` maps each retained source to its validated predecessor. An AST comparison verifies that the four NMPC engines differ only in module names and artifact paths. Metric calculations and tuning functions retain their numerical expressions. The cleanup changes module names, entry points, artifact destinations, figure labels, MATLAB search paths, and documentation. Both evaluation and release source identities are recorded.
 
 The source package supports the reduced example and new industrial simulations. The companion archive additionally supports immediate reanalysis of the evaluated study.
