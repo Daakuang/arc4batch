@@ -4,9 +4,32 @@ Advanced regulatory control (ARC) for cooling-limited exothermic semi-batch reac
 
 The temperature loop requests cooling. An economic valve position controller uses the available cooling margin to adjust initiator feed and the pressure setpoint. The code also implements nominal and parameter-adaptive output-feedback NMPC for the paper's comparison.
 
-**Paper:** [A Theory-Guided Advanced Regulatory Control Synthesis for Cooling-Limited Exothermic Semi-Batch Reactors](https://arxiv.org/abs/2606.18799), Chenchen Zhou and Jose Matias.
+**Published paper:** [A theory-guided advanced regulatory control synthesis for cooling-limited exothermic semi-batch reactors](https://doi.org/10.1016/j.jprocont.2026.103872), Chenchen Zhou and José Matias. *Journal of Process Control* **168** (2026), Article **103872**.
 
-**Version:** 1.0.2. Research code accompanying the linked preprint.
+**DOI:** [10.1016/j.jprocont.2026.103872](https://doi.org/10.1016/j.jprocont.2026.103872) · **Preprint:** [arXiv:2606.18799](https://arxiv.org/abs/2606.18799)
+
+**Version:** 1.0.2. Research code accompanying the published paper.
+
+## How to cite
+
+If you use the ARC method, code or simulation results in your research, please cite the published paper:
+
+> Chenchen Zhou and José Matias. A theory-guided advanced regulatory control synthesis for cooling-limited exothermic semi-batch reactors. *Journal of Process Control* **168** (2026), Article **103872**. https://doi.org/10.1016/j.jprocont.2026.103872
+
+```bibtex
+@article{ZhouMatias2026ARC,
+  author  = {Zhou, Chenchen and Matias, Jos{\'e}},
+  title   = {A theory-guided advanced regulatory control synthesis for cooling-limited exothermic semi-batch reactors},
+  journal = {Journal of Process Control},
+  volume  = {168},
+  pages   = {103872},
+  year    = {2026},
+  doi     = {10.1016/j.jprocont.2026.103872},
+  url     = {https://doi.org/10.1016/j.jprocont.2026.103872}
+}
+```
+
+The DOI above identifies the journal article. For reproducibility, also record the software release or commit used; the current release is [v1.0.2](https://github.com/Daakuang/arc4batch/releases/tag/v1.0.2). GitHub's **Cite this repository** menu uses the published paper specified in [CITATION.cff](CITATION.cff).
 
 ## Start with the reduced example
 
@@ -65,3 +88,4 @@ This repository accompanies the ARC paper. It includes the shared reactor equati
 The tests and examples reproduce the stated models and scenarios. The local tuning bounds rely on the conditions in `config/vpc_tuning.json`; they do not certify the full industrial reactor. Batch-time comparisons include only completed runs that conform to the temperature recipe and operating limits. Recorded failures are retained.
 
 Code and supplied simulated results use the [MIT license](LICENSE). Software author and maintainer: Chenchen Zhou. Cite [CITATION.cff](CITATION.cff) and the scientific paper when using the method or results. See [THIRD_PARTY.md](THIRD_PARTY.md) for dependency attribution.
+
