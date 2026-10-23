@@ -82,10 +82,3 @@ The industrial reactor model is shared with these earlier studies:
 - **Original public Simulink model:** Simin Li, [A Semi-batch Polymerization Process for Fault Simulation](https://www.mathworks.com/matlabcentral/fileexchange/169341-a-semi-batch-polymerization-process-for-fault-simulation), MATLAB Central File Exchange; first released in July 2024.
 
 This repository accompanies the ARC paper. It includes the shared reactor equations and the nominal/adaptive NMPC implementations used for its comparison. It does not provide a complete reproduction package for the earlier real-time NMPC framework or the original fault-monitoring study. The File Exchange distribution is a separate Simulink implementation with its own license.
-
-## Scope and attribution
-
-The tests and examples reproduce the stated models and scenarios. The local tuning bounds rely on the conditions in `config/vpc_tuning.json`; they do not certify the full industrial reactor. Batch-time comparisons include only completed runs that conform to the temperature recipe and operating limits. Recorded failures are retained.
-
-Code and supplied simulated results use the [MIT license](LICENSE). Software author and maintainer: Chenchen Zhou. Cite [CITATION.cff](CITATION.cff) and the scientific paper when using the method or results. See [THIRD_PARTY.md](THIRD_PARTY.md) for dependency attribution.
-
